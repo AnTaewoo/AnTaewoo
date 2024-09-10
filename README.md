@@ -1,11 +1,10 @@
-## Hi there 👋
+## 안녕하세요 👋
 
-
-**AnTaewoo/AnTaewoo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
+**안태우의 개인 레포지토리 입니다**
+> 모두 반갑습니다 ✨
 
 - 🔭 I’m currently working on ...
+> Aidenteti CDO
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
