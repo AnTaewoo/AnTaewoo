@@ -88,7 +88,7 @@ print()
 data = {
     "Region": regions,
     "Population": n_people,
-    "Ratio (%)": norm_covid,
+    "Ratio (%, ppm)": norm_covid,
 }
 intro_p = f"""### Korean Population by Region
 
@@ -101,7 +101,7 @@ info_table = f"""
 """
 
 df = pd.DataFrame(data)
-df["Ratio (%)"] = df["Ratio (%)"].round(1)
+df["Ratio (%, ppm)"] = df["Ratio (%, ppm)"].round(1)
 
 # 데이터프레임을 markdown 테이블로 변환하여 출력
 md_table = tabulate(df, headers="keys", tablefmt="pipe")
