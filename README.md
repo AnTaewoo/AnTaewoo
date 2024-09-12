@@ -1,13 +1,16 @@
 ## 안녕하세요 👋
 
 **안태우의 개인 레포지토리 입니다**
+
 > 모두 반갑습니다 ✨
 
 - 🔭 I’m currently working on ...
-> Aidenteti CDO
+  > Aidenteti CDO
 - 🌱 I’m currently learning ...
-> BlockChain | ML&DL | Algorithms
+  > BlockChain | ML&DL | Algorithms
 - 🤔 I’m looking for help with ...
-> AI Engineer
+  > AI Engineer
 - 📫 How to reach me: ...
-> senior Programmer
+  > senior Programmer
+- 🧑‍💻 What can i do: ...
+  > Ts, Python, Rust, Solidity, C, C++, Java, ...
