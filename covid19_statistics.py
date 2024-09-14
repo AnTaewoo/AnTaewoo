@@ -81,34 +81,64 @@ print()  # Print an empty line
 print("| Region | Population | Ratio (%) |")
 print("| ------ | ---------- | --------- |")
 for idx, pop in enumerate(n_people):
-    ratio = norm_covid[idx]
+    ratio = (pop * 100) / sum_people
     print("| %s | %d | %.1f |" % (regions[idx], pop, ratio))
 print()
 
-data = {
+
+# Regions
+data1 = {
     "Region": regions,
     "Population": n_people,
-    "Ratio (%, ppm)": norm_covid,
+    "Ratio (%)": n_people,
 }
-intro_p = f"""### Korean Population by Region
+intro_p1 = f"""### Korean Population by Region
 
 - Total population: {sum_people}
 
 """
-info_table = f"""
+info_table1 = f"""
 
-> < covid19_statistics > table
+> table 1-1
+
+
+
 """
 
-df = pd.DataFrame(data)
-df["Ratio (%, ppm)"] = df["Ratio (%, ppm)"].round(1)
+df1 = pd.DataFrame(data1)
+df1["Ratio (%)"] = (df1["Ratio (%)"] * 100 / sum_people).map("{:.1f}".format)
+
+# Regions by Covid
+data2 = {
+    "Region": regions,
+    "New Cases": n_covid,
+    "Ratio (%)": n_covid,
+    "New Cases / 1M": norm_covid,
+}
+intro_p2 = f"""### Korean COVID-19 New Cases by Region
+
+- Total new cases: {sum_covid}
+
+"""
+info_table2 = f"""
+
+> table 1-2
+"""
+
+df2 = pd.DataFrame(data2)
+df2["Ratio (%)"] = (df2["Ratio (%)"] * 100 / sum_covid).map("{:.1f}".format)
+df2["New Cases / 1M"] = df2["New Cases / 1M"].map("{:.1f}".format)
 
 # 데이터프레임을 markdown 테이블로 변환하여 출력
-md_table = tabulate(df, headers="keys", tablefmt="pipe")
+md_table1 = tabulate(df1, headers="keys", tablefmt="pipe")
+md_table2 = tabulate(df2, headers="keys", tablefmt="pipe")
 
 with open("covid19_statistics.md", "w", encoding="utf-8") as f:
-    f.write(intro_p)
-    f.write(md_table)
-    f.write(info_table)
+    f.write(intro_p1)
+    f.write(md_table1)
+    f.write(info_table1)
+    f.write(intro_p2)
+    f.write(md_table2)
+    f.write(info_table2)
 
 print("Complete to Save covid19_statistics.md")
