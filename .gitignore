@@ -1,0 +1,4 @@
+*.pdf
+.venv
+.vscode
+.DS_Store
