@@ -4,16 +4,21 @@ from scipy.optimize import minimize
 
 if __name__ == "__main__":
     # Define a cost function and its gradient
-    h = 1e-6
+    h = 1e-4
 
     f = lambda x: (1 - x[0]) ** 2 + 100 * (x[1] - x[0] ** 2) ** 2
-    fd = lambda x: np.array(x + (f(x) / h))
+    fd = lambda x: np.array(
+        [
+            (f([x[0] + h, x[1]]) - f([x[0] - h, x[1]])) / (2 * h),
+            (f([x[0], x[1] + h]) - f([x[0], x[1] - h])) / (2 * h),
+        ]
+    )
 
     # Define configuration
-    x_init = [-1, 1]  # Please try other initial points
-    learn_rate = 0.0001  # Please try 0.01, 0.005, and 0.0001
-    max_iter = 10000  # Please try 100, 1000, and 100000
+    learn_rate = 0.001  # Please try 0.01, 0.005, and 0.0001
     min_tol = 1e-6
+    x_init = [-1, 1]  # Please try other initial points
+    max_iter = 10000  # Please try 100, 1000, and 100000
 
     # Optimize the cost function using my gradient descent
     x = np.array(x_init)
@@ -22,7 +27,8 @@ if __name__ == "__main__":
         # Run the gradient descent
         xp = x
 
-        x = fd(x)  # TODO: Implement your gradient descent
+        x = x - learn_rate * fd(x)  # TODO: Implement your gradient descent
+
         print(x)
         gd_xs.append(x)
 
