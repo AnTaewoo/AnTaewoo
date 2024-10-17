@@ -29,7 +29,6 @@ if __name__ == "__main__":
 
         x = x - learn_rate * fd(x)  # TODO: Implement your gradient descent
 
-        print(x)
         gd_xs.append(x)
 
         # Check the terminal condition
@@ -54,5 +53,4 @@ if __name__ == "__main__":
     plt.xlabel("$x_0$")
     plt.ylabel("$x_1$")
     plt.legend()
-    plt.show()
     plt.savefig("multivar_optimization_skeleton.png")
