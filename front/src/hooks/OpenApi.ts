@@ -1,24 +1,18 @@
-import axios from "axios";
+import OpenAI from "openai";
 
-export default function OpenApi() {
-  console.log(import.meta.env.VITE_OPENAI_API);
-  const data = {
-    model: "gpt-3.5-turbo",
-    messages: [{ role: "user", content: "Say this is a test!" }],
-    temperature: 0.1,
-  };
+export default async function OpenAPI() {
+  const openai = new OpenAI();
 
-  axios
-    .post("https://api.openai.com/v1/chat/completions", data, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API}`, // 환경 변수를 사용하여 API 키를 설정
+  const completion = await openai.chat.completions.create({
+    model: "gpt-4o",
+    messages: [
+      { role: "system", content: "You are a helpful assistant." },
+      {
+        role: "user",
+        content: "Write a haiku about recursion in programming.",
       },
-    })
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+    ],
+  });
+
+  console.log(completion.choices[0].message);
 }
