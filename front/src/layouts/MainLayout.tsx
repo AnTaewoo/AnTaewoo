@@ -1,6 +1,9 @@
-import OpenApi from "@/hooks/OpenApi";
+import { Outlet } from "react-router-dom";
 
 export default function MainLayout() {
-  OpenApi();
-  return <div>hi</div>;
+  return (
+    <div className=" w-screen">
+      <Outlet />
+    </div>
+  );
 }

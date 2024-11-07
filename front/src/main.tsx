@@ -3,7 +3,10 @@ import { RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import { router } from "@/router/Router";
+import { LandingContextProvider } from "./context/LandingContext";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <LandingContextProvider>
+    <RouterProvider router={router} />
+  </LandingContextProvider>
 );
