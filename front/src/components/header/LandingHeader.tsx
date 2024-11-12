@@ -20,7 +20,7 @@ const LandingHeader = () => {
   const handleScrollView = useContext(LandingContext).handleScrollView;
 
   return (
-    <div className="py-6 h-full w-full flex justify-between z-50">
+    <div className="py-6 h-full w-full flex justify-between">
       <div className="h-full flex gap-10">
         {list.map((value, index) => (
           <Button

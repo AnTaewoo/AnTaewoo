@@ -4,6 +4,16 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
+      keyframes: {
+        opacity: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "shade-in": "opacity 0.8s linear",
+        delay: "all 0.3s linear 0.5s",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

@@ -13,8 +13,7 @@ export const LandingContextProvider = (props: any) => {
       window.scrollTo({
         top:
           scrollRef.current[index].getBoundingClientRect().y +
-          globalThis.scrollY -
-          200,
+          globalThis.scrollY,
         behavior: "smooth",
       });
     } else {
