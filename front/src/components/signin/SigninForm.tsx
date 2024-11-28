@@ -3,8 +3,6 @@ import { Input } from "@/components/ui/shadcn/input";
 import { MutableRefObject, useRef } from "react";
 import { Link } from "react-router-dom";
 
-
-
 export default function SigninForm() {
   const inputRef: MutableRefObject<Element[]> = useRef([]);
   
