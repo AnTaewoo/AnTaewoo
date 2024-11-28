@@ -1,8 +1,8 @@
-import LandingContext from "@/context/LandingContext";
+import LandingContext from "@/provider/context/LandingContext";
 import linkedinLogo from "@/assets/footer/linkedin-logo.png";
 import instagramLogo from "@/assets/footer/instagram-logo.png";
 import xLogo from "@/assets/footer/x-logo.png";
-import logo from "@/assets/icon-invert.png";
+import logo from "@/assets/landing/icon-invert.png";
 
 import { Link } from "react-router-dom";
 import { useContext } from "react";

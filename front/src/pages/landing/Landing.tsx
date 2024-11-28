@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import LandingContext from "@/context/LandingContext";
-import Overview from "./container/Overview";
-import About from "./container/About";
-import Main from "./container/Main";
+import LandingContext from "@/provider/context/LandingContext";
+import Overview from "@/components/landing/Overview";
+import About from "@/components/landing/About";
+import Main from "@/components/landing/Main";
 
 export default function Landing() {
   const landingCtx = useContext(LandingContext);

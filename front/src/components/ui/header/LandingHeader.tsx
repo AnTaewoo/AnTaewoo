@@ -1,7 +1,8 @@
-import logo from "@/assets/icon-invert.png";
-import { Button } from "@/components/ui/button";
-import LandingContext from "@/context/LandingContext";
+import logo from "@/assets/landing/icon-invert.png";
+import { Button } from "@/components/ui/shadcn/button";
+import LandingContext from "@/provider/context/LandingContext";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface ListType {
   to?: string;
@@ -18,6 +19,7 @@ const list: ListType[] = [
 
 const LandingHeader = () => {
   const handleScrollView = useContext(LandingContext).handleScrollView;
+  const nav = useNavigate();
 
   return (
     <div className="py-6 h-full w-full flex justify-between">
@@ -44,10 +46,11 @@ const LandingHeader = () => {
       </div>
       <div className="h-full items-center flex">
         <Button
-          className=" text-white hover:bg-white hover:text-black rounded-full hover:scale-105"
+          className=" text-white hover:bg-white hover:text-black rounded-full hover:scale-105 h-10 w-20"
           variant="ghost"
+          onClick={() => nav("/auth/signin")}
         >
-          <p className="font-semibold">Sign Up</p>
+          <p className="font-bold text-center">Sign In</p>
         </Button>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import { router } from "@/router/Router";
-import { LandingContextProvider } from "./context/LandingContext";
+import { LandingContextProvider } from "./provider/context/LandingContext";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <LandingContextProvider>

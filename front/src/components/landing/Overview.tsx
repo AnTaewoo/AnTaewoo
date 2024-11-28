@@ -1,4 +1,4 @@
-import testImage from "@/assets/test-detect.png";
+import testImage from "@/assets/landing/test-detect.png";
 
 export default function Overview() {
   return (
@@ -9,7 +9,7 @@ export default function Overview() {
           <br />
           Pauses the Timer when you’re not Studying
         </p>
-        <p className="text-slate-400 text-xl font-extrabold text-center leading-[80px] font-sans break-words">
+        <p className="text-slate-300 text-xl font-extrabold text-center leading-[80px] font-sans break-words">
           YOLO와 OpenCV를 통해 노트북 카메라로 실시간 활동을 감지하고 분석하여,
           집중한 공부 시간만 정확하게 측정할 수 있도록 돕습니다.
         </p>

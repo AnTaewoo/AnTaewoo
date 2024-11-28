@@ -1,7 +1,7 @@
-import yoloImg from "@/assets/yolo-icon.svg";
-import opencvImg from "@/assets/opencv-icon.png";
-import reactImg from "@/assets/react-icon.png";
-import bgImg from "@/assets/background-2.png";
+import yoloImg from "@/assets/landing/yolo-icon.svg";
+import opencvImg from "@/assets/landing/opencv-icon.png";
+import reactImg from "@/assets/landing/react-icon.png";
+import bgImg from "@/assets/landing/background-2.png";
 
 import { useState } from "react";
 import Accordion from "./_container/Accordion";
