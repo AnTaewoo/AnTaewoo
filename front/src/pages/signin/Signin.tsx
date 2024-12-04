@@ -1,5 +1,4 @@
-import SigninForm from "@/components/signin/SigninForm";
-import SigninTitle from "@/components/signin/SigninTitle";
+import { SigninTitle, SigninForm } from "@/components/signin";
 import NavToBack from "@/components/ui/auth/NavToBack";
 import AuthFooter from "@/components/ui/footer/AuthFooter";
 
