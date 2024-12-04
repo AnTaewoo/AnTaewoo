@@ -4,6 +4,8 @@ import Landing from "@/pages/landing/Landing";
 import AuthLayout from "@/layouts/AuthLayout";
 import Signin from "@/pages/signin/Signin";
 import Signup from "@/pages/signup/Signup";
+import DashBoardLayout from "@/layouts/DashBoardLayout";
+import DashBoard from "@/pages/dashboard/DashBoard";
 
 export const router = createBrowserRouter([
   {
@@ -19,4 +21,9 @@ export const router = createBrowserRouter([
       { path: "signup", element: <Signup /> },
     ],
   },
+  {
+    path: "/dashboard",
+    element: <DashBoardLayout />,
+    children: [{ path: "", element: <DashBoard /> }],
+  }
 ]);

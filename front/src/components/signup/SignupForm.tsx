@@ -1,14 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../ui/shadcn/button";
 import { Input } from "../ui/shadcn/input";
-import { MutableRefObject, useRef } from "react";
-
-
-interface Proptype {
-  email: string;
-  password: string;
-  currentPassword: string;
-}
+import { useForm } from "react-hook-form"
+import useCryptoValue from "@/hooks/useCryptoValue";
+import useFetchApi from "@/hooks/useFetchApi";
 
 interface InputProps {
   type: string;
@@ -45,35 +40,29 @@ const InputList: InputProps[] = [
 ]
 
 export default function SignupForm() {
-  const inputRef: MutableRefObject<Element[]> = useRef([]);
+  const {register, handleSubmit} = useForm();
   const nav = useNavigate();
-  
-  const setInputRef = (index: number) => (el: Element) => {
-    inputRef.current[index] = el;
-  };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const data: DataType = {
-      email: "",
-      password: "",
-      currentPassword: ""
-    };
-    InputList.map((value, index) => data[value.id] = (inputRef.current[index] as HTMLInputElement).value);
-
+  const onSubmit = async (data: any) => {
     const isSignup: boolean = signup(data)
+    data["password"] = await useCryptoValue(data.password);
 
     if (isSignup) {
-      // backend logic
+      const result = await useFetchApi({...data},"create","POST","http://127.0.0.1:5000/");
       
-
-      nav('/auth/signin');
+      if (result) {
+        alert("회원가입 성공!");
+        nav('/auth/signin');
+        return;
+      } else {
+        alert("알 수 없는 오류로 회원가입에 실패했습니다.");
+      }
     } else {
       return;
     }
   }
   
-  const signup = ({email,password,currentPassword}: Proptype): boolean => {
+  const signup = ({email,password,currentPassword}: DataType): boolean => {
     const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       const regexPassword = /^.{8,20}$/;
       const regexCurrentPassword = password === currentPassword;
@@ -93,7 +82,6 @@ export default function SignupForm() {
           alert("비밀번호가 일치하지 않습니다.");
           break;
         default:
-          alert("회원가입 성공!");
           return true;
       }
   
@@ -101,11 +89,11 @@ export default function SignupForm() {
   }
 
   return (
-  <form className="w-full max-w-xl rounded-xl shadow-2xl p-5" onSubmit={(e)=>handleSubmit(e)}>
+  <form className="w-full max-w-xl rounded-xl shadow-2xl p-5" onSubmit={handleSubmit(onSubmit)}>
     <div className="space-y-4">
       {InputList.map((input, index) => (
         <div key={index} className="flex h-14">
-          <Input type={input.type} placeholder={input.placeholder} className="w-full h-full font-bold rounded-xl pl-5 !text-lg placeholder:text-slate-400 focus:border-[#2563eb] focus:border-2" required={input.required} ref={setInputRef(index)} />
+          <Input type={input.type} placeholder={input.placeholder} className="w-full h-full font-bold rounded-xl pl-5 !text-lg placeholder:text-slate-400 focus:border-[#2563eb] focus:border-2" required={input.required} {...register(input.id)} />
         </div>
       ))}
       <div className="flex h-14">
