@@ -54,7 +54,7 @@ class UserModel:
             cursor = connection.cursor(dictionary=True)
             cursor.execute(
                 "SELECT * FROM user WHERE email = %s AND password = %s ",
-                (data["email"], data["password"]),
+                (data["email"], data["password"],),
             )
             existing_user = cursor.fetchall()
 
