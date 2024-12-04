@@ -1,5 +1,4 @@
-import SignupForm from "@/components/signup/SignupForm";
-import SignupTitle from "@/components/signup/SignupTitle";
+import { SignupForm, SignupTitle } from "@/components/signup";
 import NavToBack from "@/components/ui/auth/NavToBack";
 import AuthFooter from "@/components/ui/footer/AuthFooter";
 
