@@ -3,6 +3,13 @@ import { Button } from "../ui/shadcn/button";
 import { Input } from "../ui/shadcn/input";
 import { MutableRefObject, useRef } from "react";
 
+
+interface Proptype {
+  email: string;
+  password: string;
+  currentPassword: string;
+}
+
 interface InputProps {
   type: string;
   placeholder: string;
@@ -54,11 +61,45 @@ export default function SignupForm() {
     };
     InputList.map((value, index) => data[value.id] = (inputRef.current[index] as HTMLInputElement).value);
 
-    const isSignup: boolean = signup()
+    const isSignup: boolean = signup(data)
 
+    if (isSignup) {
+      // backend logic
+      
 
-
+      nav('/auth/signin');
+    } else {
+      return;
+    }
   }
+  
+  const signup = ({email,password,currentPassword}: Proptype): boolean => {
+    const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const regexPassword = /^.{8,20}$/;
+      const regexCurrentPassword = password === currentPassword;
+  
+      const isValidEmail = regexEmail.test(email);
+      const isValidPassword = regexPassword.test(password);
+      const isValidCurrentPassword = regexCurrentPassword;
+  
+      switch (true) {
+        case !isValidEmail:
+          alert("이메일 형식이 올바르지 않습니다.");
+          break;
+        case !isValidPassword:
+          alert("비밀번호는 영문, 숫자를 포함한 8자 이상 20자 이하로 입력해주세요.");
+          break;
+        case !isValidCurrentPassword:
+          alert("비밀번호가 일치하지 않습니다.");
+          break;
+        default:
+          alert("회원가입 성공!");
+          return true;
+      }
+  
+      return false;
+  }
+
   return (
   <form className="w-full max-w-xl rounded-xl shadow-2xl p-5" onSubmit={(e)=>handleSubmit(e)}>
     <div className="space-y-4">
