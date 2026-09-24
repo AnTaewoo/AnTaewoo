@@ -50,20 +50,21 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🏗️ [Foreman](https://github.com/AnTaewoo/foreman)
-**HITL Multi-Agent Dev Platform**
+### 🕒 [PureTimer](https://github.com/AnTaewoo/puretimer)
+**AI 기반 실시간 학습 타이머** · [Live Demo](https://puretimer-front.vercel.app)
 
-GitHub 저장소와 Goal 한 문장을 넣으면 AI 에이전트 팀이 **Plan → Issue → Branch → PR**로 일하고, 사람은 *위험한 결정*(Plan 승인·PR 머지·의존성 추가)만 승인합니다.
+커스텀 학습한 **YOLOv11n** 모델이 카메라로 핸드폰 사용을 실시간 감지해, 핸드폰을 들면 타이머가 자동으로 멈춥니다. 온전히 집중한 시간만 기록합니다.
 
-- 🔗 서명된 append-only 이벤트 (해시 체인 · 이벤트 소싱)
-- 📦 격리 컨테이너 워커 — DB·시크릿·토큰 미전달
-- ♻️ 모든 GitHub 쓰기 멱등 + Dry-run 기본
+- 📷 핸드폰 감지 conf 임계값 초과 시 자동 일시정지
+- 📊 대시보드 · 학습 세션 통계 시각화
+- 🧱 [Front](https://github.com/AnTaewoo/puretimer-front) / [Back](https://github.com/AnTaewoo/puretimer-back) / [AI](https://github.com/AnTaewoo/puretimer-ai) 분리 · Flask MVC
 
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Postgres](https://img.shields.io/badge/Postgres%2016-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis%20Streams-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![YOLOv11](https://img.shields.io/badge/YOLOv11-00FFFF?style=flat-square&logoColor=black)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
 </td>
 <td width="50%" valign="top">
@@ -121,7 +122,6 @@ PDF·PPT·Excel·HWP·스캔본까지 파싱·청킹·색인하고, **프로젝�
 
 | Project | Description | Stack |
 |:--|:--|:--|
-| 🕒 [PureTimer](https://github.com/AnTaewoo/puretimer) | AI 기반 생산성 타이머 · [Front](https://github.com/AnTaewoo/puretimer-front) / [Back](https://github.com/AnTaewoo/puretimer-back) / [AI](https://github.com/AnTaewoo/puretimer-ai) | React · TS · Flask |
 | 🧠 [ML Study @ SeoulTech](https://github.com/ml-study-seoultech/AnTaewoo) | 딥러닝 기초 아키텍처 직접 구현 스터디 | Python |
 | 🎮 [RL Study Log](https://github.com/AnTaewoo/reinforcement_learning_study_log) | 강화학습 학습 기록 | Python |
 | 📈 Stock Auto Alert Bot 🔒 | 텔레그램 주식 알림 자동화 | Python · Telegram |
@@ -140,20 +140,36 @@ PDF·PPT·Excel·HWP·스캔본까지 파싱·청킹·색인하고, **프로젝�
 <div align="center">
 
 **🤖 AI & LLM**<br/>
-<img src="https://skillicons.dev/icons?i=py,pytorch,sklearn&theme=dark"/>
-<img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" height="48"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/vLLM-FF6F00?style=for-the-badge" height="48"/>
-<img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" height="48"/>
+<img src="https://img.shields.io/badge/YOLO-00A3A3?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/ComfyUI%20%C2%B7%20Flux-5A45FF?style=for-the-badge" height="48"/>
 
 **🧩 Backend & Data**<br/>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,postgres,mysql,redis&theme=dark"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/OpenSearch-005EB8?style=for-the-badge" height="48"/>
 
 **🎨 Frontend**<br/>
-<img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind&theme=dark"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/React-087EA4?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge" height="48"/>
 
 **☁️ Infra & DevOps**<br/>
-<img src="https://skillicons.dev/icons?i=docker,nginx,aws,linux,arch,ubuntu,githubactions&theme=dark"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge" height="48"/>
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge" height="48"/>
 
 </div>
 
@@ -167,7 +183,7 @@ PDF·PPT·Excel·HWP·스캔본까지 파싱·청킹·색인하고, **프로젝�
 | 🚀 | **CDO** (Chief Development Officer) | Aidenteti |
 | 🌙 | **Manager** | Late Bird |
 | 🏫 | **8th Generation Member** | IHSHS |
-| 🧠 | **Member** | ML Study @ SeoulTech |
+| 🌐 | **Core** | GDGoC 6th |
 | 🏆 | **Participant** | LG Aimers 9th Hackathon |
 
 <!--
@@ -184,8 +200,8 @@ PDF·PPT·Excel·HWP·스캔본까지 파싱·청킹·색인하고, **프로젝�
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=AnTaewoo&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnTaewoo&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+<img height="170" src="profile-summary-card-output/tokyonight/3-stats.svg"/>
+<img height="170" src="profile-summary-card-output/tokyonight/2-most-commit-language.svg"/>
 
 <img src="https://streak-stats.demolab.com?user=AnTaewoo&theme=tokyonight&hide_border=true" width="60%"/>
 
