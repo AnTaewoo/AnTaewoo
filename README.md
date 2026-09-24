@@ -9,7 +9,7 @@
 
 <br/>
 
-<a href="https://antaewoo.com/portfolio"><img src="https://img.shields.io/badge/Portfolio-antaewoo.com-A371F7?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
+<a href="https://blog.antaewoo.com"><img src="https://img.shields.io/badge/Portfolio-antaewoo.com-A371F7?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
 <a href="https://kr.linkedin.com/in/taewoo-an-32469a31b"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:atw13730@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://www.instagram.com/taewoo_an"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
@@ -32,10 +32,9 @@
 <td width="45%" valign="top">
 
 - 🎓 **서울과학기술대학교 (SeoulTech)**<br/>&nbsp;&nbsp;&nbsp;&nbsp;컴퓨터공학과 · 2023 ~
-- 🎖️ **대한민국 공군 (ROKAF)**<br/>&nbsp;&nbsp;&nbsp;&nbsp;2025.03 ~ 2026.12 · 복무 중에도 개발 중 🫡
-- 🤖 **Focus** — 에이전틱 워크플로우, 멀티에이전트 오케스트레이션, 온프레미스 RAG
-- 🤝 **Claude와 페어 프로그래밍** — 설계 문서·ROADMAP·CLAUDE.md로 에이전트가 실행하는 개발 프로세스를 만듭니다
-- 💬 **Ask me about** — LangGraph · vLLM · OpenSearch · FastAPI · Next.js
+- 🎖️ **대한민국 공군 (ROKAF)**<br/>&nbsp;&nbsp;&nbsp;&nbsp;2025.03 ~ 2026.12 · 복무 중에도 개발 중
+- 🤖 **Focus** — LLM Agent, ML/DL, RAG, Robotics
+- 💬 **Ask me about** — LangGraph · LLM · ML/DL · Flask · Next.js · React
 - 🌱 **Now** — 강화학습 공부 중 ([study log](https://github.com/AnTaewoo/reinforcement_learning_study_log))
 
 </td>
