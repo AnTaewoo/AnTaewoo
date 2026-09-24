@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:6e40c9,75:1f6feb,100:00d4ff&height=230&section=header&text=An%20Taewoo&fontSize=72&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=AI%20Engineer%20%E2%80%A2%20Agentic%20Systems%20Builder&descSize=20&descAlignY=58" width="100%"/>
 
 <a href="https://antaewoo.com/portfolio">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=A371F7&center=true&vCenter=true&width=640&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C+%EC%95%88%ED%83%9C%EC%9A%B0%EC%9E%85%EB%8B%88%EB%8B%A4+%F0%9F%91%8B;Building+HITL+Multi-Agent+Platforms+%F0%9F%A4%96;On-prem+RAG+%C2%B7+LangGraph+%C2%B7+vLLM+%E2%9A%A1;SeoulTech+CSE+%C2%B7+ROKAF+Developer+%F0%9F%AB%A1" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=A371F7&center=true&vCenter=true&width=640&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C+%EC%95%88%ED%83%9C%EC%9A%B0%EC%9E%85%EB%8B%88%EB%8B%A4+%F0%9F%91%8B;Building+Agent+Platforms+%F0%9F%A4%96;RAG+LangGraph+LLM+%E2%9A%A1;SeoulTech+CSE+%C2%B7+ROKAF+Developer+%F0%9F%AB%A1" alt="Typing SVG"/>
 </a>
 
 <br/>
@@ -144,18 +144,15 @@ PDF·PPT·Excel·HWP·스캔본까지 파싱·청킹·색인하고, **프로젝�
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge" height="48"/>
-<img src="https://img.shields.io/badge/vLLM-FF6F00?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/YOLO-00A3A3?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/ComfyUI%20%C2%B7%20Flux-5A45FF?style=for-the-badge" height="48"/>
 
 **🧩 Backend & Data**<br/>
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge" height="48"/>
 <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge" height="48"/>
-<img src="https://img.shields.io/badge/OpenSearch-005EB8?style=for-the-badge" height="48"/>
 
 **🎨 Frontend**<br/>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge" height="48"/>
@@ -199,10 +196,6 @@ PDF·PPT·Excel·HWP·스캔본까지 파싱·청킹·색인하고, **프로젝�
 ## 📊 GitHub Stats
 
 <div align="center">
-
-<img height="170" src="profile-summary-card-output/tokyonight/3-stats.svg"/>
-<img height="170" src="profile-summary-card-output/tokyonight/2-most-commit-language.svg"/>
-
 <img src="https://streak-stats.demolab.com?user=AnTaewoo&theme=tokyonight&hide_border=true" width="60%"/>
 
 <picture>
