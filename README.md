@@ -118,7 +118,7 @@
 <!-- ============================== FOOTER ============================== -->
 <div align="center">
 
-### 💌 *"Always looking for help with AI Engineering. Let's grow together!"*
+### 💌 *"Always looking for help. Let's grow together!"*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,25:1f6feb,60:6e40c9,100:0d1117&height=130&section=footer" width="100%"/>
 
