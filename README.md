@@ -43,32 +43,6 @@
 
 <img src="assets/divider.gif" width="100%"/>
 
-<!-- ============================== PROJECTS ============================== -->
-## 🚀 Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🕒 [PureTimer](https://github.com/AnTaewoo/puretimer)
-**AI 기반 실시간 학습 타이머** · [Live Demo](https://puretimer-front.vercel.app)
-
-커스텀 학습한 **YOLOv11n** 모델이 카메라로 핸드폰 사용을 실시간 감지해, 핸드폰을 들면 타이머가 자동으로 멈춥니다. 온전히 집중한 시간만 기록합니다.
-
-- 📷 핸드폰 감지 conf 임계값 초과 시 자동 일시정지
-- 📊 대시보드 · 학습 세션 통계 시각화
-- 🧱 [Front](https://github.com/AnTaewoo/puretimer-front) / [Back](https://github.com/AnTaewoo/puretimer-back) / [AI](https://github.com/AnTaewoo/puretimer-ai) 분리 · Flask MVC
-
-![YOLOv11](https://img.shields.io/badge/YOLOv11-00FFFF?style=flat-square&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
-</td>
-<img src="assets/divider.gif" width="100%"/>
-
 <!-- ============================== STACK ============================== -->
 ## 🛠️ Tech Stack
 
